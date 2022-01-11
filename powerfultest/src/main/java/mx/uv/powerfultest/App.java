@@ -23,6 +23,9 @@ public class App
     {
         System.out.println( "Hello World!" );
 
+        staticFiles.location("/");
+        init();
+
         options("/*", (request, response) -> {
 
             String accessControlRequestHeaders = request.headers("Access-Control-Request-Headers");
