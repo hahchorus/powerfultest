@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 
 public class Conexion {
-    private String url = "jdbc:mysql://localhost/powerfultest";
-    private String username = "root";
-    private String password = "";
+    private String url = "jdbc:mysql://db4free.net:3306/powerfultestalex?user=horushahc_bd&password=familia1231";
+    private String username = "horushahc";
+    private String password = "familia1231";
     private String driverName = "com.mysql.jdbc.Driver";
     private Connection conn = null;
 
