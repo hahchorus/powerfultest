@@ -1,4 +1,4 @@
-package inicio;
+//package inicio;
 
 
 <!DOCTYPE html>
@@ -16,12 +16,18 @@ package inicio;
     <section class="form-register">
         <h4>Inicio de Sesion para TODO</h4>
         <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
         <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-        <input class="botonex" type="submit" value="Iniciar Sesion">
+        <button class= "botonex" type="button" id="Aceptar">Aceptar</button>
         <p><a href="registar.html">¿Ya tengo cuenta?</a></p>
 
     </section>
-</body>
 
+    <span>
+        <ul id="usuarios"></ul>
+      </span>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="/powerfultest/src/main/resources/public/javascript/login.js"></script>
+
+</body>
 </html>

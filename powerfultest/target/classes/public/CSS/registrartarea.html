@@ -1,4 +1,4 @@
-package inicio;
+//package inicio;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,30 +8,33 @@ package inicio;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo2.css">
-    <title>Registro TODO</title>
+    <title>Registrar tarea</title>
 </head>
 
 <body>
     <div class = "form">
-        <section class="form-register">
-        <form action="">
+      <section class="form-register">
+      <form action="">
     
-        <h4>Formulario de registro para TODO</h4>
-        <input class="controls" type="text" name="" id="titulo" placeholder="Ingrese su Titulo de tarea">
-        <input class="controls" type="text" name="" id="descripcion" placeholder="Ingrese la descripcion de la tarea">
-        </select>
-        
-
-        <button class= "botonex" type="button" id="tareax">Registrar</button>
-        </section>
+      <h2>Registro para una nueva tarea</h2><br><br><br>
+      <h2>Titulo de la tarea :</h2><br>
+      <input class="controls" type="text" name="" id="titulo" placeholder="Ingrese el titulo de la tarea">
+      <h2>Descripcion de la tarea :</h2><br>
+      <input class="controls" type="text" name="" id="descripcion" placeholder="Ingrese la descripcion de la tarea">
+      <h2>Imagen :</h2><br>
+      <input type="file" name="" id="imag" accept=".jpg,.png" multiple /><br>
+      </select>
+        <br>
+        <button class= "botonex" type="button" id="tareax">Guardar tarea</button>
+      </section>
       </form>
     
       <span>
-        <!--<ul id="usuario"></ul>-->
+        <ul id="dato"></ul>
       </span>
-      <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="/powerfultest/src/main/java/mx/uv/powerfultest/js/registrar.js"></script>
-      -->
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="/powerfultest/src/main/resources/public/javascript/registrartarea.js"></script>
+      
       </div>
 </body>
 

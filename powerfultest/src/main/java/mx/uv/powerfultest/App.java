@@ -12,6 +12,8 @@ import static spark.Spark.*;
 import com.google.gson.*;
 
 import mx.uv.powerfultest.db.DAO;
+import mx.uv.powerfultest.db.DAOdato;
+import mx.uv.powerfultest.db.Dato;
 import mx.uv.powerfultest.db.Usuario;
 
 public class App 
@@ -61,7 +63,7 @@ public class App
 
         /*------------------- Valida login ---------------------- */
 
-        get("/verificarUsuario", (req, res)->{
+        get("/verificarlogin", (req, res)->{
             Boolean resultado;
             DAO dao = new DAO();
             Usuario u;
@@ -79,6 +81,19 @@ public class App
                 return null;
             }
         });
+
+        /*------------------ Agregar tarea ---------------------*/
+        post("/registradato", (req, res) -> {
+            // Insertamos un nuevo dato
+            String json = req.body();
+            Dato u = gson.fromJson(json, Dato.class);
+
+            DAOdato dao2 = new DAOdato();
+            JsonObject respuesta = new JsonObject();
+            respuesta.addProperty("status", dao2.insertarDato(u));
+            return respuesta;
+        });
+        
 
     }
 

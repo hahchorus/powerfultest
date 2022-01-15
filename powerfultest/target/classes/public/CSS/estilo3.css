@@ -5,15 +5,15 @@
 }
 
 body{
-    background-image: url('fondo1.jpg');
+    background-image: url('fondo2.jpg');
     background-size: cover;
 }
 
 .form-register {
-    width: 900px;
+    width: 1000px;
     background: #24303c;
     padding: 30px;
-    margin: 150px;
+    margin:auto; 
     margin-top: 100px;
     border-radius: 4px;
     font-family:'Times New Roman';
@@ -60,10 +60,10 @@ body{
 
 
 .botonex {
-    width: 100%;
+    width: 19%;
     background: #1f53c5;
     border: none;
-    text-align: center;
+    text-align: right ;
     padding: 12px;
     color: white;
     margin: 16px 0;
